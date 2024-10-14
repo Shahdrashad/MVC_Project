@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form  asp-action="Edit">
+    <Partial name="PartialView/_CreateEdit"></Partial>
+   <br />
+    <input type="submit" value="Save"  class="btn btn-primary" />
+    <a asp-action="Index" class="btn btn-light">Cancel</a>
+
+</form>

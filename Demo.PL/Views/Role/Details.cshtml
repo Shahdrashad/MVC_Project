@@ -1,0 +1,15 @@
+﻿
+@model RoleViewModel
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Role @Model.Name Details</h1>
+<partial name="PartialView/_DeleteDetails"></partial>
+<br />
+
+
+<a asp-action="Edit" class="btn btn-secondary">Edit</a>|
+<a asp-action="Index" class="btn btn-light">BackToList</a>
+

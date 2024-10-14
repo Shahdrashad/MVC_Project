@@ -1,0 +1,30 @@
+﻿@model RoleViewModel
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<h1>Create New Role</h1>
+<br />
+<form asp-action="Create">
+
+    <Partial name="PartialView/_CreateEdit"></Partial>
+
+<br />
+    <input type="submit" value="Submit" class="btn btn-primary" />
+    <a asp-action="Index" class="btn btn-light">BackToList</a>
+
+</form>
+
+@section  Scripts
+    {
+
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+   }
+
+
+
